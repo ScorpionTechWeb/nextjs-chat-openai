@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     if (chat) {
       // configuration api openai
       const configuration = new Configuration({
-        apiKey: process.env.API_KEY,
+        apiKey: process.env.api_chatgpt,
       });
       const openai = new OpenAIApi(configuration);
       const response = await openai.createCompletion({
