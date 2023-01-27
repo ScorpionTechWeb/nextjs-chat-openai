@@ -55,7 +55,7 @@ export const ChatStore = create(
       // remove one chat
       removeOneChat: (item) => {
         // toast success
-        toast.success(`Success delete ${item.chat}`);
+        toast.success(`Supprimer avec succès: ${item.chat}`);
         // remove one chat by index
         set((state) => ({
           chats: state.chats.filter((x) => x !== item),
@@ -64,7 +64,7 @@ export const ChatStore = create(
       // remove all chats
       removeAllChat: () => {
         // toast success
-        toast.success(`Success delete all chats`);
+        toast.success(`Toutes les discussions supprimée avec succès.`);
         set({ chats: [] });
       },
     }),
